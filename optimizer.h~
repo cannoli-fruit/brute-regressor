@@ -1,0 +1,4 @@
+#include "data.h"
+#include "expr.h"
+
+double opt(expr *e, datapoint *dataset, int datacount)

@@ -1,0 +1,11 @@
+#include "data.h"
+#include "expr.h"
+#include "score.h"
+
+void opt(expr *e, datapoint *dataset, int datacount) {
+  for (int i = 0; i < EXPR_LEN; ++i) {
+    double pre = e->elts[i].val;
+    double preeval = score(e, dataset, datacount);
+    double nudge = pre + 0.0001;
+  }
+}

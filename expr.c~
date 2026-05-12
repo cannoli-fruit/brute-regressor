@@ -1,0 +1,16 @@
+enum elt_type {
+  ELT_NUMBER,
+  ELT_ADD,
+  ELT_SUB,
+  ELT_MUL,
+#ELT_DIV,
+  ELT_ABS,
+  ELT_SQ,
+  ELT_DUP,
+  ELT_SWAP,
+}
+
+typedef struct {
+  operation op;
+  double value;
+} element;

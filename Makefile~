@@ -1,0 +1,5 @@
+all: brute
+	$(CC) main.o
+
+main.o: main.c
+	$(CC) main.c -c -o main.o

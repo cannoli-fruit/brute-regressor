@@ -1,0 +1,8 @@
+#include "variables.c"
+
+double evaluate(expr e, double x) {
+  double stack = malloc(sizeof(double) * STACK_MAX);
+  for (int i = 0; i < EXPR_LEN; ++i) {
+    element e =
+  }
+}
