@@ -13,41 +13,41 @@ int iscompliant(expr *e) {
     }
     case ELT_ADD: {
       if (total < 2)
-        return false;
+        return 0;
       total--;
       break;
     }
     case ELT_SUB: {
       if (total < 2)
-        return false;
+        return 0;
       total--;
       break;
     }
     case ELT_MUL: {
       if (total < 2)
-        return false;
+        return 0;
       total--;
       break;
     }
     case ELT_ABS: {
       if (total == 0)
-        return false;
+        return 0;
       break;
     }
     case ELT_SQ: {
       if (total == 0)
-        return false;
+        return 0;
       break;
     }
     case ELT_DUP: {
       if (total == 0)
-        return false;
+        return 0;
       total++;
       break;
     }
     case ELT_SWAP: {
       if (total < 2)
-        return false;
+        return 0;
       break;
     }
     default: {
@@ -56,4 +56,5 @@ int iscompliant(expr *e) {
     }
     }
   }
+  return 1;
 }
