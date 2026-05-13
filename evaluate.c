@@ -65,5 +65,6 @@ double evaluate(expr *ex, double x) {
     }
     }
   }
+  free(stack);
   return stack[--sp];
 }
